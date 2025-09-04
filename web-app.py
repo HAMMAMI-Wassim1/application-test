@@ -7,7 +7,7 @@ import os
 import time
 from datetime import datetime, timedelta
 from statistics import mean
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 # --- Directories ---
 LOG_DIR = "logs"
@@ -190,3 +190,4 @@ if not df.empty:
     df.to_excel(excel_path, index=False, engine="openpyxl")
     with open(excel_path, "rb") as f:
         st.download_button("Télécharger Excel", f, "tests_export.xlsx")
+
